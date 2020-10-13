@@ -22,6 +22,7 @@
         <module>microservice-api</module>
         <module>microservice-provider</module>
         <module>microservice-consumer</module>
+<module>microservice-security</module>
     </modules>
 
     <!-- 会实际下载jar包,子项目会继承这些依赖  -->
@@ -49,6 +50,12 @@
             <dependency>
                 <groupId>com.yc.springcloud_2</groupId>
                 <artifactId>microservice-api</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.yc.springcloud_2</groupId>
+                <artifactId>microservice-security</artifactId>
                 <version>0.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>

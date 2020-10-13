@@ -16,3 +16,17 @@ logging:
   level:
     com.yc.springcloud_2: debug
 
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka
+  instance:
+    instance-id: microservice-provider-product_1   #实例名
+    lease-expiration-duration-in-seconds: 90  #如果现在超过了5s的时间间隔( default: 90 s )
+    lease-renewal-interval-in-seconds: 30   #设置心跳的时间间隔( default:30s )
+#监控配置
+info:
+  app.name: MICROSERVICE-PROVIDER
+  company.name: yc
+  build.artifactId: $project.artifactId$
+  build.modelVersion: $project.modelVersion$
